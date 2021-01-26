@@ -1,0 +1,22 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom left, green, blue);
+}
+
+main {
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 25px;
+}
+
+h1 {
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+}
