@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <H1>Dice Roller</H1>
+        <div>
+            <div>
+                <div>
+                    <img id="dice-image" src="assets/images/dice/dice1.png" alt="dice image">
+                </div>
+                <div class="controls">
+                    <button id="roll">Roll The Dice!</button>
+                    <button id="clear">Clear Scoreboard</button>
+                </div>
+                <div class="message-container">
+                    <h3 id="message">Let's Get Rolling!</h3>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h2>Scoreboard</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dice Roll</th>
+                            <th>Number of Rolls</th>
+                            <th>Percentage of Rolls</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td id="td1">0</td>
+                            <td id="td1-percent">0%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="td2">0</td>
+                            <td id="td2-percent">0%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="td3">0</td>
+                            <td id="td3-percent">0%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td id="td4">0</td>
+                            <td id="td4-percent">0%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td id="td5">0</td>
+                            <td id="td5-percent">0%</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td id="td6">0</td>
+                            <td id="td6-percent">0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
