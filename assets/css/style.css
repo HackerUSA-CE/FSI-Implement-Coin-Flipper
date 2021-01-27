@@ -2,15 +2,16 @@ html,
 body {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 body {
     min-height: 100vh;
-    background: linear-gradient(to bottom left, lightseagreen, pink);
+    background: linear-gradient(to bottom left, orange, white);
 }
 
 main {
-    background-color: antiquewhite;
+    background-color: white;
     margin: 20px;
     padding: 25px;
 }
@@ -18,11 +19,51 @@ main {
 h1 {
     margin: 0;
     padding: 25px;
-    text-align: center;
 }
 
+/* Controls and Message Styles */
+.controls {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.message-container {
+    color: darkorange;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button {
+    font-size: 1.5em;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#flip {
+    background: linear-gradient(to bottom left, lightblue, white);
+}
+
+#flip:hover {
+    background: linear-gradient(to bottom left, darkblue, lightblue);
+}
+
+#clear {
+    background: linear-gradient(to bottom left, orange, white);
+}
+
+#clear:hover {
+    background: linear-gradient(to bottom left, red, orange);
+}
+
+/* Scoreboard Styles */
 table, 
 th, 
 td {
-    border: 1px solid black;
+    border: 1px solid darkorange;
+    margin: 0 auto;
+}
+
+td {
+    padding: 5px;
+    font-weight: bold;
 }
