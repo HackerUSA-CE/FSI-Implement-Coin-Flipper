@@ -23,7 +23,7 @@ let updateScoreboard = () => {
     // Update the values in the scoreboard table for each value
     for (let i = 0; i < allRolls.length; i++) {
         document.getElementById(`td${i + 1}`).textContent = allRolls[i]
-        document.getElementById(`td${i + 1}-percent`).textContent = allPercents[i]
+        document.getElementById(`td${i + 1}-percent`).textContent = allPercents[i] + '%'
     }
 }
 
