@@ -4,7 +4,7 @@
 let allRolls = [0, 0, 0, 0, 0, 0]
 
 // Define a function that updates the scoreboard so that both buttons can reuse it
-let updateScoreboard = () => {
+let updateScoreboard = function () {
     // Calculate total number of rolls
     let total = allRolls[0] + allRolls[1] + allRolls[2] + allRolls[3] + allRolls[4] + allRolls[5]
 
@@ -29,9 +29,9 @@ let updateScoreboard = () => {
 
 // Listen for DOMContentLoaded to ensure that all HTML and resources
 //  have been loaded before attempting to run code
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
     // Add event listeners and handlers for both buttons
-    document.getElementById('roll').addEventListener('click', () => {
+    document.getElementById('roll').addEventListener('click', function () {
         // Determine dice roll using Math.random()
         let rolledValue = Math.ceil(Math.random() * 6)
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateScoreboard()
     })
 
-    document.getElementById('clear').addEventListener('click', () => {
+    document.getElementById('clear').addEventListener('click', function () {
         // Reset the rolls values to zeroes
         allRolls = [0, 0, 0, 0, 0, 0]
 

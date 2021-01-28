@@ -2,32 +2,9 @@
 let headsRolls = 0
 let tailsRolls = 0
 
-// Define a function that updates the scoreboard so that both buttons can reuse it
-let updateScoreboard = () => {
-    // Calculate total number of rolls
-    let total = headsRolls + tailsRolls
-
-    // Create variables to track percent heads and tails
-    let percentHeads = 0
-    let percentTails = 0
-
-    // Before trying to divide, make sure total is not zero
-    if (total > 0) {
-        // Calculate percentage of heads and tails
-        percentHeads = Math.round((headsRolls / total) * 100)
-        percentTails = Math.round((tailsRolls / total) * 100)
-    }
-
-    // Update the values in the scoreboard table
-    document.getElementById('heads').textContent = headsRolls
-    document.getElementById('heads-percent').textContent = percentHeads + '%'
-    document.getElementById('tails').textContent = tailsRolls
-    document.getElementById('tails-percent').textContent = percentTails + '%'
-}
-
 // Listen for DOMContentLoaded to ensure that all HTML and resources
 //  have been loaded before attempting to run code
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
     // Add event listeners and handlers for both buttons
     document.getElementById('flip').addEventListener('click', () => {
         // Determine result using Math.random() which returns a value between 0 and 1
@@ -53,10 +30,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Update the scoreboard
-        updateScoreboard()
+
+        // Calculate total number of rolls
+        let total = headsRolls + tailsRolls
+
+        // Create variables to track percent heads and tails
+        let percentHeads = 0
+        let percentTails = 0
+
+        // Before trying to divide, make sure total is not zero
+        if (total > 0) {
+            // Calculate percentage of heads and tails
+            percentHeads = Math.round((headsRolls / total) * 100)
+            percentTails = Math.round((tailsRolls / total) * 100)
+        }
+
+        // Update the values in the scoreboard table
+        document.getElementById('heads').textContent = headsRolls
+        document.getElementById('heads-percent').textContent = percentHeads + '%'
+        document.getElementById('tails').textContent = tailsRolls
+        document.getElementById('tails-percent').textContent = percentTails + '%'
     })
 
-    document.getElementById('clear').addEventListener('click', () => {
+    document.getElementById('clear').addEventListener('click', function () {
         // Reset the heads and tails values to zero
         headsRolls = 0
         tailsRolls = 0
@@ -65,7 +61,26 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('message').textContent = 'Let\'s Get Rolling!'
 
         // Update the scoreboard
-        updateScoreboard()
+        
+        // Calculate total number of rolls
+        let total = headsRolls + tailsRolls
+
+        // Create variables to track percent heads and tails
+        let percentHeads = 0
+        let percentTails = 0
+
+        // Before trying to divide, make sure total is not zero
+        if (total > 0) {
+            // Calculate percentage of heads and tails
+            percentHeads = Math.round((headsRolls / total) * 100)
+            percentTails = Math.round((tailsRolls / total) * 100)
+        }
+
+        // Update the values in the scoreboard table
+        document.getElementById('heads').textContent = headsRolls
+        document.getElementById('heads-percent').textContent = percentHeads + '%'
+        document.getElementById('tails').textContent = tailsRolls
+        document.getElementById('tails-percent').textContent = percentTails + '%'
     })
 })
 
