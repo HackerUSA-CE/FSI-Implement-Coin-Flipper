@@ -45,15 +45,17 @@ flipBtn.addEventListener('click', function() {
         head ++
         total ++
         headTimes.innerHTML = head
-        headPercent.innerHTML = head/total
-        tailsPercent.innerHTML = tail/total
+        headPercent.innerHTML = Math.round(head/total * 100) + '%'
+        tailsPercent.innerHTML = Math.round(tail/total * 100) + '%'
+        resultText.innerHTML = 'You Flipped Heads!'
     }
     else{
         tail ++
         total ++
         tailsTimes.innerHTML = tail
-        headPercent.innerHTML = head/total
-        tailsPercent.innerHTML = tail/total
+        headPercent.innerHTML = Math.round(head/total * 100) + '%'
+        tailsPercent.innerHTML = Math.round(tail/total * 100) + '%'
+        resultText.innerHTML = 'You Flipped Tails!'
     }
 })
 
@@ -63,6 +65,7 @@ clearBtn.addEventListener('click', function() {
     total = 0
     headTimes.innerHTML = head
     tailsTimes.innerHTML = tail
-    headPercent.innerHTML = 0
-    tailsPercent.innerHTML = 0
+    headPercent.innerHTML = 0 + '%'
+    tailsPercent.innerHTML = 0 + '%'
+    resultText.innerHTML = 'Let"s get Rolling!'
 })
