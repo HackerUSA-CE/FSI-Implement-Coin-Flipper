@@ -11,13 +11,14 @@
         <H1>Penny Flip Game</H1>
         <div>
             <div>
-                <img id='penny-image' src="assets/images/penny-heads.jpg" alt='penny-image'>
+                <img id='dice-image' src="assets/images/dice/dice1.png" alt='dice-image'>
                 <div class='controls'>
-                    <button id='flip'>Flip The Penny!</button>
+                    <button id='roll'>Roll The Dice!</button>
                     <button id='clear'>Clear Scoreboard</button>
                 </div>
                 <div class='message-container'>
                     <h3 id='message'>Let's Get Rolling!</h3>
+                    <h3 id='tot-count'>You Have Rolled 0 Times yet</h3>
                 </div>
             </div>
             <hr>
@@ -26,18 +27,41 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Number of Heads</th>
-                            <th>Percentage Heads</th>
-                            <th>Number of Tails</th>
-                            <th>Percentage Tails</th>
+                            <th>Rolled #</th>
+                            <th>Counts</th>
+                            <th>Percent %</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td id="heads">0</td>
-                            <td id="heads-percent">0%</td>
-                            <td id="tails">0</td>
-                            <td id="tails-percent">0%</td>
+                            <td>"1"</td>
+                            <td id="dice1">0</td>
+                            <td id="dice1-percent">0%</td>
+                        </tr>
+                        <tr>
+                            <td>"2"</td>
+                            <td id="dice2">0</td>
+                            <td id="dice2-percent">0%</td>
+                        </tr>
+                        <tr>
+                            <td>"3"</td>
+                            <td id="dice3">0</td>
+                            <td id="dice3-percent">0%</td>
+                        </tr>
+                        <tr>
+                            <td>"4"</td>
+                            <td id="dice4">0</td>
+                            <td id="dice4-percent">0%</td>
+                        </tr>
+                        <tr>
+                            <td>"5"</td>
+                            <td id="dice5">0</td>
+                            <td id="dice5-percent">0%</td>
+                        </tr>
+                        <tr>
+                            <td>"6"</td>
+                            <td id="dice6">0</td>
+                            <td id="dice6-percent">0%</td>
                         </tr>
                     </tbody>
                 </table>
