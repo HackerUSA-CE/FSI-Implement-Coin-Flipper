@@ -48,6 +48,7 @@ flipBtn.addEventListener('click', function() {
         headPercent.innerHTML = Math.round(head/total * 100) + '%'
         tailsPercent.innerHTML = Math.round(tail/total * 100) + '%'
         resultText.innerHTML = 'You Flipped Heads!'
+        coinImg.src = 'assets/images/penny-heads.jpg'
     }
     else{
         tail ++
@@ -56,6 +57,7 @@ flipBtn.addEventListener('click', function() {
         headPercent.innerHTML = Math.round(head/total * 100) + '%'
         tailsPercent.innerHTML = Math.round(tail/total * 100) + '%'
         resultText.innerHTML = 'You Flipped Tails!'
+        coinImg.src = 'assets/images/penny-tails.jpg'
     }
 })
 
@@ -67,5 +69,6 @@ clearBtn.addEventListener('click', function() {
     tailsTimes.innerHTML = tail
     headPercent.innerHTML = 0 + '%'
     tailsPercent.innerHTML = 0 + '%'
-    resultText.innerHTML = 'Let"s get Rolling!'
+    resultText.innerHTML = "Let's get Rolling!"
+    coinImg.src = 'assets/images/penny-heads.jpg'
 })
