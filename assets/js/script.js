@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Hi')
 
     // TODO: Add event listener and handler for flip and clear buttons
+    
 
     // Flip Button Click Handler
         // TODO: Determine flip outcome
@@ -24,4 +25,44 @@ document.addEventListener('DOMContentLoaded', function () {
         // TODO: Reset global variables to 0
         // TODO: Update the scoreboard (same logic as in flip button click handler)
 
+})
+
+const resultText = document.querySelector('#message')
+const coinImg = document.querySelector('#penny-image')
+const headTimes = document.querySelector('#heads')
+const headPercent = document.querySelector('#heads-percent')
+const tailsTimes = document.querySelector('#tails')
+const tailsPercent = document.querySelector('#tails-percent')
+const flipBtn = document.querySelector('#flip')
+const clearBtn = document.querySelector('#clear')
+let head = 0
+let tail = 0
+let current = 0
+let total = 0
+flipBtn.addEventListener('click', function() {
+    current = Math.random()
+    if(current <= 0.5){
+        head ++
+        total ++
+        headTimes.innerHTML = head
+        headPercent.innerHTML = head/total
+        tailsPercent.innerHTML = tail/total
+    }
+    else{
+        tail ++
+        total ++
+        tailsTimes.innerHTML = tail
+        headPercent.innerHTML = head/total
+        tailsPercent.innerHTML = tail/total
+    }
+})
+
+clearBtn.addEventListener('click', function() {
+    head = 0
+    tail = 0
+    total = 0
+    headTimes.innerHTML = head
+    tailsTimes.innerHTML = tail
+    headPercent.innerHTML = 0
+    tailsPercent.innerHTML = 0
 })
