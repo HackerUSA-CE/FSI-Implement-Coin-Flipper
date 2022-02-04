@@ -57,4 +57,4 @@ document.addEventListener('DOMContentLoaded', function () {
         // TODO: Reset global variables to 0
         // TODO: Update the scoreboard (same logic as in flip button click handler)
     })
-})
+}) // Renew
