@@ -18,10 +18,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (e.target.value == true) {
             numHeads += 1
             document.querySelector("img").src = "./assets/images/penny-heads.jpg"
-            document.querySelector()
+            document.querySelector("#message") = "You flipped Heads!";
+            document.querySelector("#heads") = numHeads;
+            document.querySelector("#heads") = (100 * numHeads/(numHeads+numTails))+ '%';
         } else {
             numTails += 1
             document.querySelector("img").src = "./assets/images/penny-tails.jpg"
+            document.querySelector("#message") = "You flipped Tails!";
         }
         //console.log(numHeads)
         //console.log(numTails)
