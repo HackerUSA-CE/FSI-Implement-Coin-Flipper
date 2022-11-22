@@ -1,4 +1,19 @@
 // TODO: Declare any global variables we need
+//declaring Header, Flip and Clear button variables
+let headerBig = document.querySelctor("H1");
+let coinImg = document.createElement("img");
+let flipBut = document.createElement("button");
+let clearBut = document.createElement("button");
+let statusMes = document.createElement("h2");
+
+//section to set attributes to the Image, Clearn and Flip button and the Status objects
+
+
+//section to append the Image, buttons and status objects to teh header
+headerBig.append("coinImg");
+headerBig.append("flipBut");
+headerBig.append("clearBut");
+headerBig.append("statusMes");
 
 
 document.addEventListener('DOMContentLoaded', function () {
